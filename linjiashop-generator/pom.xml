@@ -55,7 +55,7 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>5.1.40</version>
+            <version>8.0.22</version>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
@@ -65,5 +65,10 @@
         </dependency>
     </dependencies>
 
-
+    <distributionManagement>
+        <repository>
+            <id>localRepository</id>
+            <url>file:D:\apache\maven-repository</url>
+        </repository>
+    </distributionManagement>
 </project>

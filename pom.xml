@@ -30,7 +30,7 @@
         <file_encoding>UTF-8</file_encoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <!--driver libs-->
-        <mysql.connector.java.version>5.1.45</mysql.connector.java.version>
+        <mysql.connector.java.version>8.0.22</mysql.connector.java.version>
         <!--auth libs-->
         <spring.security.jwt.version>1.0.9.RELEASE</spring.security.jwt.version>
         <spring.security.oauth2.version>2.2.0.RELEASE</spring.security.oauth2.version>
@@ -77,6 +77,13 @@
                 <artifactId>spring-boot-starter-data-jpa</artifactId>
                 <version>${spring.boot.version}</version>
             </dependency>
+
+            <dependency>
+                <groupId>org.springframework.data</groupId>
+                <artifactId>spring-data-jpa</artifactId>
+                <version>2.1.8.RELEASE</version>
+            </dependency>
+
 
 
             <dependency>
@@ -343,4 +350,10 @@
             </plugin>
         </plugins>
     </build>
+    <distributionManagement>
+        <repository>
+            <id>localRepository</id>
+            <url>file:D:\apache\maven-repository</url>
+        </repository>
+    </distributionManagement>
 </project>
