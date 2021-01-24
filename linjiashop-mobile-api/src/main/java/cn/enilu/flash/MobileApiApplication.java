@@ -24,14 +24,14 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @EnableJpaRepositories(basePackages = "cn.enilu.flash.dao", repositoryFactoryBeanClass = BaseRepositoryFactoryBean.class)
 @EnableJpaAuditing
 @EnableConfigurationProperties(WxProperties.class)
-public class MobileApiApplication extends SpringBootServletInitializer {
+public class MobileApiApplication /*extends SpringBootServletInitializer */{
 
-    @Override
+    /*@Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
         return application.sources(MobileApiApplication.class);
-    }
+    }*/
 
     public static void main(String[] args) {
-        SpringApplication.run(MobileApiApplication.class);
+        SpringApplication.run(MobileApiApplication.class, args);
     }
 }

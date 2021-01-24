@@ -24,4 +24,9 @@ public class DashboardController extends BaseController {
         Map data = dashboardService.getDashboardData();
         return Rets.success(data);
     }
+
+    @RequestMapping("test")
+    public Object test() {
+        return Rets.success("data");
+    }
 }
